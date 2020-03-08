@@ -1,0 +1,50 @@
+div{
+  text-align: center;
+  margin-top: 100px;
+}
+
+#btn-direcao{
+  width: 150px;
+  height: 90px;
+  margin-right: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: aliceblue;
+  color: firebrick;
+}
+
+#btn-docente{
+  width: 150px;
+  height: 90px;
+  margin-right: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: firebrick;
+  color: aliceblue;
+}
+
+#btn-aluno{
+  width: 150px;
+  height: 90px;
+  margin-right: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: aliceblue;
+  color: firebrick;
+}
+
+#btn-disciplina{
+  width: 150px;
+  height: 90px;
+  margin-right: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: firebrick;
+  color: aliceblue;
+}
+
+#btn-turma{
+  width: 150px;
+  height: 90px;
+  margin-top: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: firebrick;
+  color: aliceblue;
+}
+
