@@ -1,11 +1,14 @@
-div{
+.ais{
   text-align: center;
   margin-top: 100px;
 }
 
 #btn-direcao{
+  margin-top: 20px;
+  position: absolute;
   width: 150px;
   height: 90px;
+  margin-left: -400px;
   margin-right: 40px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: aliceblue;
@@ -13,8 +16,11 @@ div{
 }
 
 #btn-docente{
+  margin-top: 20px;
+  position: absolute;
   width: 150px;
   height: 90px;
+  margin-left: -200px;
   margin-right: 40px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: firebrick;
@@ -22,6 +28,8 @@ div{
 }
 
 #btn-aluno{
+  margin-top: 20px;
+  position: absolute;
   width: 150px;
   height: 90px;
   margin-right: 40px;
@@ -31,8 +39,11 @@ div{
 }
 
 #btn-disciplina{
+  margin-top: 20px;
+  position: absolute;
   width: 150px;
   height: 90px;
+  margin-left: 200px;
   margin-right: 40px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: firebrick;
@@ -42,9 +53,11 @@ div{
 #btn-turma{
   width: 150px;
   height: 90px;
-  margin-top: 40px;
+  margin-left: -100px;
+  margin-top: 140px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: firebrick;
   color: aliceblue;
 }
+
 

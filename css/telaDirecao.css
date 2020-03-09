@@ -1,0 +1,41 @@
+h2{
+  text-align: center;
+  background-color: aliceblue;
+  padding: 20px;
+  margin-top: -20px;
+  color: firebrick;
+}
+
+.div-pesquisa{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: firebrick;
+}
+
+#campo-pesquisa{
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 200px;
+}
+
+#btn-pesquisa{
+  height: 25px;
+  background-color: firebrick;
+  color: aliceblue;
+}
+
+a.opcoes{
+  color: aliceblue;
+}
+
+.tabela{
+  text-align: center;
+  width: 560px;
+  margin: auto;
+  margin-top: 70px;
+  background-color: firebrick;
+  color: aliceblue;
+}
+

@@ -70,17 +70,18 @@ legend{
   border-radius: 5px;
 }
 
-a{
+
+
+a.pVez{
+  margin-top: 20px;
   position: absolute;
   color: aliceblue;
 }
 
-a.pVez{
-  margin-top: 20px;
-}
-
 a.eSenha{
   margin-top: 10px;
+  position: absolute;
+  color: aliceblue;
 }
 
 #formulario input.btn_submit{
