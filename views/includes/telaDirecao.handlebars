@@ -6,6 +6,7 @@
   <button id="btn-pesquisa" name="btn-pesquisa" type="submit">Pesquisar</button>
 </div>
 
+<a id="novoDiretor" href="novoDiretor">Novo Diretor</a>
 <div class="tabela">
   <table border="1">
     <tr>
@@ -22,7 +23,7 @@
           {{#formatDate dt_nasc}}{{/formatDate}}
 
         </td>
-        <td><a class="opcoes" href="#">Alterar</a> <a class="opcoes" href="#">Excluir</a></td>
+        <td><a class="opcoes" href="alterar">Alterar</a> <a class="opcoes" href="delete/{{dataValues.id}}">Excluir</a></td>
       </tr>
     {{/each}}
 </table>

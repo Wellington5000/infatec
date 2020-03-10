@@ -39,3 +39,8 @@ a.opcoes{
   color: aliceblue;
 }
 
+#novoDiretor{
+  position: absolute;
+  margin-left: 60%;
+  margin-top: 30px;
+}
