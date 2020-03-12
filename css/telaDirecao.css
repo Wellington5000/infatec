@@ -41,6 +41,10 @@ a.opcoes{
 
 #novoDiretor{
   position: absolute;
-  margin-left: 60%;
-  margin-top: 30px;
+  margin-left: 55%;
+  margin-top: 20px;
+  color: firebrick;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
 }

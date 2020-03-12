@@ -1,0 +1,25 @@
+<h2>Discplina</h2>
+
+<div class="div-pesquisa"> 
+  <label id="lbl-pesquisa" for="pesquisa">Digite o nome</label>
+  <input id="campo-pesquisa" type="text" name="pesquisa">
+  <a href="procurar"><button id="btn-pesquisa" name="btn-pesquisa" type="submit">Pesquisar</button></a>
+</div>
+
+<a id="novoDiretor" href="novoDisciplina">Nova Disciplina</a>
+<div class="tabela-disc">
+  <table border='1'>
+    <tr>
+        <th>Nome</th>
+        <th>Data de Criação</th>
+        <th>Opções</th>
+    </tr>
+    {{#each disciplina}}
+      <tr>
+        <td>{{dataValues.nome}}</td>
+        <td> {{#formatDate dataValues.dt_criacao}}{{/formatDate}} </td>
+        <td><a class="opcoes" href="alterarDisciplina{{dataValues.id}}">Alterar</a> <a class="opcoes" href="deletarDisciplina/{{dataValues.id}}">Excluir</a></td>
+      </tr>
+    {{/each}}
+</table>
+</div>

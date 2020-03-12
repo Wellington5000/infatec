@@ -1,6 +1,6 @@
 const db = require('./db')
 
-const Direcao = db.sequelize.define('direcao', {
+const Aluno = db.sequelize.define('aluno', {
   nome: {
     type: db.Sequelize.STRING
   },
@@ -13,10 +13,7 @@ const Direcao = db.sequelize.define('direcao', {
   email: {
     type: db.Sequelize.STRING
   },
-  senha: {
-    type: db.Sequelize.STRING
-  },
-})  
+})
 
-module.exports = Direcao
+module.exports = Aluno
 

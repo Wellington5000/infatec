@@ -1,14 +1,21 @@
-#form-area{
-  position:absolute;
+
+#form-alt{
+  margin: auto;
   left:37%;
   top:25%;
   width:520px;
-  height:470px;
+  height:520px;
   background-color: firebrick;
   color: aliceblue;
   border-radius: 10px;
 }
-#form-area #form
+
+#field-alt{
+  height: 470px;
+  width: 450px;
+}
+
+#form-alt #formu-alt
 {
   margin-left: 23px;
   margin-top: 10px;
@@ -17,12 +24,7 @@
   text-align: center;
 }
 
-#field{
-  height: 420px;
-  width: 450px;
-}
-
-#form label{
+#formu-alt label{
   position:absolute;
   left:19px;
   margin-right:5px;
@@ -31,7 +33,7 @@
   margin-top: 10px;
 }
 
-#form input.campo_nome{
+#formu-alt input.camp_nome{
   position:absolute;
   left:95px;
   top:23px;
@@ -40,7 +42,7 @@
   margin-top: 5px;
   border-radius: 5px;
 }
-#form input.campo_cpf{
+#formu-alt input.camp_cpf{
   position:absolute;
   left:95px;
   top:100px;
@@ -49,7 +51,7 @@
   margin-top: 5px;
   border-radius: 5px;
 }
-#form input.campo_dt_nasc{
+#formu-alt input.camp_dt_nasc{
   position:absolute;
   left:220px;
   top:170px;
@@ -58,27 +60,46 @@
   margin-top: 5px;
   border-radius: 5px;
 }
-#form input.campo_senha{
+#alt_senha{
   position:absolute;
-  left:95px;
+  left:19px;
+  margin-right:5px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+.camp_senha_antiga{
+  position:absolute;
+  left:25px;
   top:320px;
-  width:200px;
+  width:170px;
   padding: 10px;
   margin-top: 5px;
   border-radius: 5px;
 }
-#form input.campo_email{
+.camp_nova_senha{
   position:absolute;
-  left:95px;
-  top:245px;
-  width:200px;
+  left:25px;
+  top:370px;
+  width:170px;
   padding: 10px;
   margin-top: 5px;
   border-radius: 5px;
 }
 
-#form input.btn_add{
-  margin-top: 20px;
+.camp_conf_nova_senha{
+  position:absolute;
+  left:250px;
+  top:370px;
+  width:170px;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+
+#formu-alt input.btn_alt{
+  margin-top: 170px;
   color: firebrick;
   border-style: solid;
   width: 100px;
@@ -86,6 +107,4 @@
   padding: 10px;
   border-radius: 10px;
 }
-
-
 

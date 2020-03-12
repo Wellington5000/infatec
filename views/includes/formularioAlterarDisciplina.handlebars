@@ -1,0 +1,15 @@
+{{#each direcao}}
+<div id="form-alt-disc">
+    <form id="formu-alt-disc" autocomplete="off" action="atualizar{{dataValues.id}}" method="POST">
+      <fieldset id="field-alt-disc">
+        <legend>Alterar</legend>
+        
+        <label>Nome</label><input class="camp_nome_disc" type="text" name="nome" value="{{dataValues.nome}}" required><br><br>
+
+        <br><br><label>Data de Criação</label><input class="camp_dt_criacao" type="text" name="dt_nasc" value= {{#formatDate dataValues.dt_nasc}}{{/formatDate}} required><br><br><br><br>
+
+        <input type='submit' class="btn_disc" value='Alterar'>
+      </fieldset>
+    </form>
+  </div>
+  {{/each}}

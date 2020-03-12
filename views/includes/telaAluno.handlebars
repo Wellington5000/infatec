@@ -1,4 +1,4 @@
-<h2>{{departamento}}</h2>
+<h2>Aluno (a)</h2>
 
 <div class="div-pesquisa"> 
   <label id="lbl-pesquisa" for="pesquisa">Digite o nome</label>
@@ -6,7 +6,7 @@
   <a href="procurar"><button id="btn-pesquisa" name="btn-pesquisa" type="submit">Pesquisar</button></a>
 </div>
 
-<a id="novoDiretor" href="novo{{departamento}}">Novo Diretor</a>
+<a id="novoDiretor" href="novoAluno">Novo Aluno</a>
 <div class="tabela">
   <table border="1">
     <tr>
@@ -15,12 +15,12 @@
         <th>Data de Nascimento</th>
         <th>Opções</th>
     </tr>
-    {{#each direcao}}
+    {{#each docente}}
       <tr>
         <td>{{dataValues.nome}}</td>
         <td>{{dataValues.cpf}}</td>
         <td> {{#formatDate dataValues.dt_nasc}}{{/formatDate}} </td>
-        <td><a class="opcoes" href="alterar{{dataValues.id}}">Alterar</a> <a class="opcoes" href="deletarDirecao/{{dataValues.id}}">Excluir</a></td>
+        <td><a class="opcoes" href="alterarAluno{{dataValues.id}}">Alterar</a> <a class="opcoes" href="deletarAluno/{{dataValues.id}}">Excluir</a></td>
       </tr>
     {{/each}}
 </table>

@@ -4,11 +4,12 @@ const handlebars = require('express-handlebars');
 const path = require('path');
 var mysql = require('mysql');
 var session = require('express-session');
-const usuarios = require('./controllers/usuarios')
-const app = express();
 const moment = require('moment')
-
-
+const direcao = require('./controllers/direcao')
+const docente = require('./controllers/docente')
+const aluno = require('./controllers/aluno')
+const disciplina = require('./controllers/disciplina')
+const app = express();
 
 const connection = mysql.createConnection({
 	host     : 'localhost',
@@ -27,7 +28,7 @@ app.use(session({
 //Define o Layout default do 
 app.engine('handlebars', handlebars({defaultLayout: 'main', helpers: {
 	formatDate: (date) => {
-			return moment(date).format('DD/MM/YYYY')
+			return moment(date).format('YYYY-MM-DD')
 	}
 }}));
 app.set('view engine', 'handlebars');
@@ -47,7 +48,7 @@ app.post('/auth', function(request, response) {
       if (results.length > 0) {
 				request.session.loggedin = true;
 				request.session.username = username;
-				response.redirect('usuario/telaInicial');
+				response.redirect('diretor/telaInicial');
 			} else {
 				response.send('Incorrect Username and/or Password!');
 			}			
@@ -59,7 +60,14 @@ app.post('/auth', function(request, response) {
 	}
 });
 
+app.get('/home', function (req, res) {
+  res.redirect('diretor/telaInicial');
+})
+
 //Rotas
-app.use('/usuario', usuarios)
+app.use('/docente', docente)
+app.use('/diretor', direcao)
+app.use('/aluno', aluno)
+app.use('/disciplina', disciplina)
 
 app.listen(8080);

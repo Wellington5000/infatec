@@ -1,48 +1,27 @@
-header{
-  background-color: firebrick;
-}
-
-p{
-  padding: 10px;
-  color: aliceblue;
-}
-
-h1{
-  padding: 10px;
-  text-align: center;
-  color: aliceblue;
-}
-
-#area{
+#form-disc{
   position:absolute;
   left:37%;
   top:25%;
-  width:380px;
-  height:320px;
+  width:520px;
+  height:300px;
   background-color: firebrick;
   color: aliceblue;
   border-radius: 10px;
 }
-#area #formulario
-{
+#form-disc #formul{
   margin-left: 23px;
   margin-top: 10px;
   position:absolute;
   display:block;
   text-align: center;
 }
-fieldset
-{
-  width:300px;
-  height:270px;
-}
-legend{
-  font-style:bold;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
+
+#field-disc{
+  height: 250px;
+  width: 450px;
 }
 
-#formulario label{
+#form-disc label{
   position:absolute;
   left:19px;
   margin-right:5px;
@@ -51,7 +30,7 @@ legend{
   margin-top: 10px;
 }
 
-#formulario input.campo_nome{
+#form-disc input.campo_nome{
   position:absolute;
   left:95px;
   top:23px;
@@ -60,32 +39,19 @@ legend{
   margin-top: 5px;
   border-radius: 5px;
 }
-#formulario input.campo_senha{
+
+#form-disc input.campo_dt_nasc{
   position:absolute;
-  left:95px;
-  margin-top:2px;
+  left:190px;
+  top:95px;
   width:200px;
   padding: 10px;
   margin-top: 5px;
   border-radius: 5px;
 }
 
-
-
-a.pVez{
-  margin-top: 20px;
-  position: absolute;
-  color: aliceblue;
-}
-
-a.eSenha{
-  margin-top: 10px;
-  position: absolute;
-  color: aliceblue;
-}
-
-#formulario input.btn_submit{
-  margin-top: 40px;
+#form-disc input.btn_add{
+  margin-top: 60px;
   color: firebrick;
   border-style: solid;
   width: 100px;
@@ -93,5 +59,3 @@ a.eSenha{
   padding: 10px;
   border-radius: 10px;
 }
-
-

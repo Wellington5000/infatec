@@ -1,21 +1,23 @@
-<div id="form-area">
-    <form id="form" autocomplete="off" action="add" method="POST">
-      <fieldset id="field">
-        <legend>Novo Diretor</legend>
+{{#each direcao}}
+<div id="form-alt">
+    <form id="formu-alt" autocomplete="off" action="atualizar{{dataValues.id}}" method="POST">
+      <fieldset id="field-alt">
+        <legend>Alterar</legend>
+        
+        <label>Nome</label><input class="camp_nome" type="text" name="nome" value="{{dataValues.nome}}" required><br><br>
+        <br><br><label>CPF</label><input class="camp_cpf" type="text" name="cpf" value={{dataValues.cpf}} required><br><br>
 
-        <label>Nome</label><input class="campo_nome" type="text" name="nome" placeholder="Ex: João da Silva" required><br><br>
+        <br><br><label>Data de Nascimento</label><input class="camp_dt_nasc" type="text" name="dt_nasc" value= {{#formatDate dataValues.dt_nasc}}{{/formatDate}} required><br><br><br><br>
+        
+        <hr>
+        <p id="alt_senha">Alterar Senha</p>
 
-        <br><br><label>CPF</label><input class="campo_cpf" type="text" name="cpf" placeholder="Ex: 12345678901" required><br><br>
+        <input type="text" class="camp_senha_antiga" name="senha_antiga" placeholder="Senha Antiga">
+        <input type="text" class="camp_nova_senha" name="nova_senha" placeholder="Nova Senha">
+        <input type="text" class="camp_conf_nova_senha" name="conf_nova_senha" placeholder="Confirmar Nova Senha">
 
-        <br><br><label>Data de Nascimento</label><input class="campo_dt_nasc" type="date" name="dt_nasc" required><br><br>
-
-        <a href="">><input class="btn_add" type="submit" value="Alterar Senha" onclick="myFunction()"></a><br><br><br>
-
-        <div id="myDiv">
-          <input type="text" placeholder="Nova Senha">
-        </div>
-
-        <a href="">><input class="btn_add" type="submit" value="Alterar"></a>
+        <input type='submit' class="btn_alt" value='Alterar'>
       </fieldset>
     </form>
   </div>
+  {{/each}}

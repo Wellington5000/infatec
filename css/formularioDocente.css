@@ -1,0 +1,9 @@
+#form input.btn_addDocente{
+  margin-top: 60px;
+  color: firebrick;
+  border-style: solid;
+  width: 100px;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+}
