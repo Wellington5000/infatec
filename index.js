@@ -76,4 +76,5 @@ app.use('/aluno', aluno)
 app.use('/disciplina', disciplina)
 app.use('/turma', turma)
 
-app.listen(8080);
+var port_number = server.listen(process.env.PORT || 3000);
+app.listen(port_number);
