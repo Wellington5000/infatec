@@ -20,13 +20,6 @@ const connection = mysql.createConnection({
 	database : 'infatec'
 });
 
-//abrea sessão
-app.use(session({
-	secret: 'secret',
-	resave: true,
-	saveUninitialized: true
-}));
-
 //Define o Layout default do 
 app.engine('handlebars', handlebars({defaultLayout: 'main', helpers: {
 	formatDate: (date) => {
@@ -48,8 +41,6 @@ app.post('/auth', function(request, response) {
 	if (username && password) {
 		connection.query('SELECT * FROM usuario WHERE nome = ? AND senha = ?', [username, password], function(error, results, fields) {
       if (results.length > 0) {
-				request.session.loggedin = true;
-				request.session.username = username;
 				response.redirect('diretor/telaInicial');
 			} else {
 				response.send('Incorrect Username and/or Password!');
@@ -78,4 +69,4 @@ app.use('/disciplina', disciplina)
 app.use('/turma', turma)
 
 
-http.createServer(app).listen(3000, () => console.log("Servidor rodando local na porta 3000"));
+http.createServer(app).listen(3002, () => console.log("Servidor rodando local na porta 3002"));
