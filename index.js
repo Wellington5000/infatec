@@ -69,4 +69,5 @@ app.use('/disciplina', disciplina)
 app.use('/turma', turma)
 
 
-http.createServer(app).listen(5000, () => console.log("Servidor rodando local na porta 3002"));
+var porta = process.env.PORT || 8080;
+app.listen(porta);
