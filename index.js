@@ -10,6 +10,7 @@ const docente = require('./controllers/docente')
 const aluno = require('./controllers/aluno')
 const turma = require('./controllers/turma')
 const disciplina = require('./controllers/disciplina')
+const server = require('http')
 const app = express();
 
 const connection = mysql.createConnection({
@@ -76,5 +77,5 @@ app.use('/aluno', aluno)
 app.use('/disciplina', disciplina)
 app.use('/turma', turma)
 
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number);
+
+app.listen(3000);
