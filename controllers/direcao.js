@@ -10,25 +10,22 @@ const app = express()
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-router.get('/login', function (req, res) {
-  res.render('includes/formularioLogin');
-})
-
 router.get('/telaInicial', function (req, res) {
   res.render('includes/telaInicial');
 })
 
 router.get('/direcao', function (req, res){
   Direcao.findAll().then(function(direcao){
-    res.render('includes/telaDirecao', {direcao: direcao, title: 'Direção', departamento: 'Direcao'})
+    res.render('includes/Direcao/telaDirecao', {direcao: direcao, title: 'Direção', departamento: 'Direcao'})
   })
 })
 
 router.get('/novoDirecao', function (req, res) {
-  res.render('includes/formularioDirecao');
+  res.render('includes/Direcao/formularioDirecao');
 })
 
 router.post('/add', function(req, res){
+  console.log(req.body.nome);
   Direcao.create({
     nome:req.body.nome,
     cpf:req.body.cpf,

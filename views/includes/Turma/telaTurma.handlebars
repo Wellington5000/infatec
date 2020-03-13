@@ -1,0 +1,32 @@
+<h2>Turma</h2>
+
+<div class="div-pesquisa"> 
+  <label id="lbl-pesquisa" for="pesquisa">Digite o nome</label>
+  <input id="campo-pesquisa" type="text" name="pesquisa">
+  <a href="procurar"><button id="btn-pesquisa" name="btn-pesquisa" type="submit">Pesquisar</button></a>
+</div>
+
+<a id="novoDiretor" href="novaTurma">Nova Turma</a>
+<div class="tabela">
+  <table border="1">
+    <tr>
+        <th>Nome da Turma</th>
+        <th>Ano</th>
+        <th>Data de Criação</th>
+        <th>Opções</th>
+    </tr>
+    {{#each turma}}
+      <tr>
+        <td>{{dataValues.nome}}</td>
+        <td>{{dataValues.cpf}}</td>
+        <td> {{#formatDate dataValues.dt_nasc}}{{/formatDate}} </td>
+        <td>
+          <a href="erro">Ver docentes</a> 
+          <a href="erro">Ver alunos</a> 
+          <a class="opcoes" href="erro">Alterar</a> 
+          <a class="opcoes" href="erro">Excluir</a>
+        </td>
+      </tr>
+    {{/each}}
+</table>
+</div>

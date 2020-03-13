@@ -1,5 +1,7 @@
 const db = require('./db')
 const docente = require('./docente')
+const aluno = require('./aluno')
+const disciplina = require('./disciplina')
 
 const Turma = db.sequelize.define('turma', {
   nome: {
@@ -14,6 +16,7 @@ const Turma = db.sequelize.define('turma', {
 })
 
 docente.hasMany(Turma); // Will add userId to Task model
-Turma.hasMany(docente)
+disciplina.hasMany(Turma);
+aluno.hasMany(Turma);
 
-Turma.sync({force:true})
+module.exports = Turma

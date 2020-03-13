@@ -1,0 +1,39 @@
+        <div id="abrirModalDocentes" class="modal">
+          <a href="#fechar" title="Fechar" class="fechar">x</a>
+          <h2>Vincular Docentes</h2>
+          <select name="select" id="#opcao"> 
+            {{#each docente}}
+              <option value="valor1">{{dataValues.nome}}</option>
+            {{/each}}
+          </select>
+
+          <div id="lista_disc">
+            {{#each disciplina}}
+              <input type="checkbox" id="scales" name="languages" class="checks" value={{dataValues.nome}}>
+              <label for="scales">{{dataValues.nome}}</label>
+              <br> 
+            {{/each}}
+          </div>
+
+          <a href="erro"></a><button id="btn_salvar">Salvar</button>
+        </div>
+
+<div id="form-area">
+      <fieldset id="field-turma">
+        <legend>Nova Turma</legend>
+
+        <label>Nome</label><input class="campo_nome" type="text" name="nome" placeholder="Ex: João da Silva" ><br><br>
+
+        <br><br><label>Ano</label><input class="campo_cpf" type="text" name="cpf" placeholder="Ex: 12345678901" ><br><br>
+
+        <br><br><label>Data de Criação</label><input class="campo_dt_nasc" type="date" name="dt_nasc" ><br><br>
+
+        <a href="#abrirModalDocentes"><button class="btn-vincular">Vincular Docentes</button></a>
+        <a href="#abrirModalAlunos"><button class="btn-vincular">Vincular Alunos</button><br></a>
+
+        <a href="addTurma"><button class="btn_criar_turma">Criar</button></a>
+      </fieldset>
+  </div>
+  
+  
+

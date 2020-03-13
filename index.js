@@ -8,6 +8,7 @@ const moment = require('moment')
 const direcao = require('./controllers/direcao')
 const docente = require('./controllers/docente')
 const aluno = require('./controllers/aluno')
+const turma = require('./controllers/turma')
 const disciplina = require('./controllers/disciplina')
 const app = express();
 
@@ -60,6 +61,10 @@ app.post('/auth', function(request, response) {
 	}
 });
 
+app.get('', function (req, res) {
+  res.render('includes/formularioLogin');
+})
+
 app.get('/home', function (req, res) {
   res.redirect('diretor/telaInicial');
 })
@@ -69,5 +74,6 @@ app.use('/docente', docente)
 app.use('/diretor', direcao)
 app.use('/aluno', aluno)
 app.use('/disciplina', disciplina)
+app.use('/turma', turma)
 
 app.listen(8080);

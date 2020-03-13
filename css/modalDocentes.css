@@ -1,0 +1,69 @@
+.modal{
+  font-family: Arial, Helvetica, sans-serif;
+  background: firebrick;
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  width: 600px;
+  height: 520px;
+  margin-left: 34%;
+  position: absolute;
+  color: firebrick;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 15px 20px;
+  background: #fff;
+}
+
+.fechar {
+  position: absolute;
+  width: 30px;
+  right: -15px;
+  top: -20px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  background: #ff4545;
+  border-radius: 50%;
+  font-size: 16px;
+  color: firebrick;
+}
+
+select{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 30px;
+  margin-left: 35%;
+}
+
+#lista_disc{
+  background-color: aliceblue;
+  overflow: auto;
+  margin-top: 100px;
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+#btn_salvar{
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 250px;
+  color: firebrick;
+  border-style: solid;
+  width: 100px;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+}

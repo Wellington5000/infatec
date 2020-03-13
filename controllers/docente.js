@@ -12,13 +12,13 @@ app.use(bodyParser.json());
 //Rota para a tela inicial do docente
 router.get('/doc', function (req, res){
   Docente.findAll().then(function(docente){
-    res.render('includes/telaDocente', {docente: docente})
+    res.render('includes/Docente/telaDocente', {docente: docente})
   })
 })
 
 //Rota para o formulario para adicionar novo docente
 router.get('/novoDocente', function (req, res) {
-  res.render('includes/formularioDocente');
+  res.render('includes/Docente/formularioDocente');
 })
 
 //Rota para deletar docente

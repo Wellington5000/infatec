@@ -13,13 +13,13 @@ app.use(bodyParser.json());
 //Rota para a tela inicial do Aluno
 router.get('/aluno', function (req, res){
   Aluno.findAll().then(function(docente){
-    res.render('includes/telaAluno', {docente: docente})
+    res.render('includes/Aluno/telaAluno', {docente: docente})
   })
 })
 
 //Rota para o formulario para adicionar novo aluno
 router.get('/novoAluno', function (req, res) {
-  res.render('includes/formularioAluno');
+  res.render('includes/Aluno/formularioAluno');
 })
 
 //Rota para adicionar um novo aluno a partir do formulario

@@ -12,13 +12,13 @@ app.use(bodyParser.json());
 //Rota para a tela inicial do Aluno
 router.get('/disciplina', function (req, res){
   Disciplina.findAll().then(function(disciplina){
-    res.render('includes/telaDisciplina', {disciplina: disciplina})
+    res.render('includes/Disciplina/telaDisciplina', {disciplina: disciplina})
   })
 })
 
 //Rota para o formulario para adicionar novo aluno
 router.get('/novoDisciplina', function (req, res) {
-  res.render('includes/formularioDisciplina');
+  res.render('includes/Disciplina/formularioDisciplina');
 })
 
 //Rota para adicionar um novo aluno a partir do formulario
@@ -41,7 +41,7 @@ router.get('/deletarDisciplina/:id', function(req, res){
 //Rota para o formulário alterar aluno 
 router.get('/alterarDisciplina:id', function (req, res) {
   Disciplina.findAll({where:{'id': req.params.id}}).then(function(direcao){
-    res.render('includes/formularioAlterarDisciplina',{direcao: direcao});
+    res.render('includes/Disciplina/formularioAlterarDisciplina',{direcao: direcao});
   })
 })
 
