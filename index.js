@@ -10,7 +10,7 @@ const docente = require('./controllers/docente')
 const aluno = require('./controllers/aluno')
 const turma = require('./controllers/turma')
 const disciplina = require('./controllers/disciplina')
-const server = require('http')
+const http = require('http')
 const app = express();
 
 const connection = mysql.createConnection({
@@ -78,4 +78,4 @@ app.use('/disciplina', disciplina)
 app.use('/turma', turma)
 
 
-app.listen(3000);
+http.createServer(app).listen(3000, () => console.log("Servidor rodando local na porta 3000"));
